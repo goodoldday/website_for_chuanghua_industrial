@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chuanghua Industrial</title>
+
+<style>
+:root{
+    --bg:#f5f7fb;
+    --text:#0f172a;
+    --muted:#64748b;
+    --primary:#0b2a4a;
+    --accent:#3b82f6;
+    --card:rgba(255,255,255,0.75);
+    --border:rgba(15,23,42,0.08);
+}
+
+*{box-sizing:border-box;}
+
+body{
+    margin:0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    background: radial-gradient(circle at top, #eaf1ff, var(--bg));
+    color:var(--text);
+}
+
+/* NAV */
+nav{
+    position:sticky;
+    top:0;
+    z-index:50;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    padding:12px;
+    background:rgba(255,255,255,0.7);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--border);
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:600;
+    font-size:13px;
+    padding:8px 12px;
+    border-radius:999px;
+    transition:0.2s;
+}
+
+nav a:hover{
+    background:rgba(59,130,246,0.12);
+}
+
+/* HERO */
+header{
+    padding:90px 20px;
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    max-width:1100px;
+    margin:auto;
+    gap:40px;
+    align-items:center;
+}
+
+.hero-box{
+    background:linear-gradient(135deg,var(--primary),#1e3a8a);
+    color:white;
+    padding:40px;
+    border-radius:20px;
+}
+
+.hero-box h1{
+    margin:0;
+    font-size:42px;
+}
+
+.hero-box p{
+    opacity:0.85;
+    margin-top:10px;
+}
+
+.hero-side{
+    padding:20px;
+}
+
+.hero-side div{
+    background:var(--card);
+    border:1px solid var(--border);
+    backdrop-filter:blur(10px);
+    padding:18px;
+    border-radius:16px;
+    margin-bottom:12px;
+}
+
+/* SECTIONS */
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+h2{
+    font-size:24px;
+    margin-bottom:18px;
+}
+
+/* GRID CARDS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:14px;
+}
+
+.card{
+    background:var(--card);
+    border:1px solid var(--border);
+    padding:18px;
+    border-radius:16px;
+    backdrop-filter:blur(10px);
+    transition:0.25s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+    border-color:rgba(59,130,246,0.3);
+}
+
+/* BADGES */
+.badge{
+    display:inline-block;
+    padding:6px 10px;
+    border-radius:999px;
+    background:rgba(59,130,246,0.12);
+    color:var(--primary);
+    font-size:12px;
+    margin:3px;
+}
+
+/* CONTACT */
+input,textarea{
+    width:100%;
+    padding:12px;
+    border-radius:12px;
+    border:1px solid var(--border);
+    margin:8px 0;
+    outline:none;
+}
+
+button{
+    padding:12px 16px;
+    border:none;
+    border-radius:12px;
+    background:var(--primary);
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:var(--accent);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:40px;
+    color:var(--muted);
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#manufacturing">Manufacturing</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#timeline">History</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header>
+    <div class="hero-box">
+        <h1>Chuanghua Industrial</h1>
+        <p>Professional manufacturer of electromagnetic & magnetic components since 2010</p>
+    </div>
+
+    <div class="hero-side">
+        <div><b>Global Manufacturing</b><br><small>Multiple production bases in China</small></div>
+        <div><b>R&D Driven</b><br><small>Strong engineering & custom solutions</small></div>
+        <div><b>Certified Quality</b><br><small>ISO / IATF / UL / EcoVadis</small></div>
+    </div>
+</header>
+
+<section id="about">
+    <h2>Company Overview</h2>
+
+    <div class="card">
+        Huizhou Chuanghua Industrial Co., Ltd. specializes in electromagnetic devices,
+        including LED drivers, automotive electronics, photovoltaic systems, inverters, and smart communication systems.
+    </div>
+
+    <div class="grid">
+        <div class="card"><b>Founded</b><br>2010</div>
+        <div class="card"><b>Employees</b><br>1,000+</div>
+        <div class="card"><b>Industry</b><br>Magnetic Components</div>
+        <div class="card"><b>Bases</b><br>Multiple factories</div>
+    </div>
+</section>
+
+<section id="products">
+    <h2>Product Categories</h2>
+
+    <div class="grid">
+        <div class="card">LED Transformers</div>
+        <div class="card">Power Inductors</div>
+        <div class="card">Automotive Magnetics</div>
+        <div class="card">PV Components</div>
+        <div class="card">Energy Storage Parts</div>
+        <div class="card">Custom Magnetics</div>
+    </div>
+</section>
+
+<section id="manufacturing">
+    <h2>Manufacturing Capability</h2>
+
+    <div class="card">
+        Advanced automated production systems ensure consistent quality and scalable output.
+    </div>
+
+    <div class="grid">
+        <div class="card">Automated Winding</div>
+        <div class="card">Assembly Lines</div>
+        <div class="card">Testing Labs</div>
+        <div class="card">R&D Center</div>
+    </div>
+</section>
+
+<section id="certifications">
+    <h2>Certifications</h2>
+
+    <div class="card">
+        <span class="badge">ISO9001</span>
+        <span class="badge">IATF16949</span>
+        <span class="badge">ISO14001</span>
+        <span class="badge">UL</span>
+        <span class="badge">EcoVadis</span>
+        <span class="badge">High-Tech</span>
+    </div>
+</section>
+
+<section id="timeline">
+    <h2>History</h2>
+
+    <div class="card">
+        2010 – Founded<br>
+        2016 – ISO9001<br>
+        2019 – IATF16949<br>
+        2020 – High-Tech Enterprise<br>
+        2025 – EcoVadis Bronze
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="card">
+        <input placeholder="Name">
+        <input placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Send</button>
+    </div>
+</section>
+
+<footer>
+    © 2026 Chuanghua Industrial
+</footer>
+
+</body>
+</html>
